@@ -1,0 +1,6 @@
+{
+  "name": "India Startup Guide",
+  "description": "India Startup Guide by ATSFY Technologies",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

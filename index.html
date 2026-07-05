@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>India Startup Guide — ATSFY Technologies</title>
+    <meta name="description" content="India Startup Guide by ATSFY Technologies. A premium, offline-ready Progressive Web App with company registration, cost calculators, structure comparison, scheme eligibility, and professional business plan services." />
+    
+    <!-- PWA & Mobile Web App Meta Tags -->
+    <meta name="theme-color" content="#0F172A" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Startup Guide" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    
+    <!-- Icons & Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom styling for the smooth initial loader -->
+    <style>
+      #initial-pwa-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #0F172A; /* Slate 900 matching the brand theme color */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99999;
+        transition: opacity 0.5s ease-out, visibility 0.5s;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      .loader-logo-container {
+        position: relative;
+        width: 96px;
+        height: 96px;
+        margin-bottom: 24px;
+        animation: pulseLogo 2s infinite ease-in-out;
+      }
+      @keyframes pulseLogo {
+        0%, 100% { transform: scale(1); filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.2)); }
+        50% { transform: scale(1.05); filter: drop-shadow(0 0 25px rgba(59, 130, 246, 0.4)); }
+      }
+      .loader-text {
+        color: #F8FAFC;
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+        margin-bottom: 4px;
+      }
+      .loader-subtext {
+        color: #94A3B8;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+      .loader-bar {
+        width: 140px;
+        height: 3px;
+        background-color: #1E293B;
+        border-radius: 9999px;
+        overflow: hidden;
+        margin-top: 16px;
+      }
+      .loader-progress {
+        width: 40%;
+        height: 100%;
+        background: linear-gradient(90deg, #3B82F6, #6366F1);
+        border-radius: 9999px;
+        animation: loadingBar 1.5s infinite ease-in-out;
+      }
+      @keyframes loadingBar {
+        0% { transform: translateX(-100%); }
+        50% { transform: translateX(150%); }
+        100% { transform: translateX(-100%); }
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 antialiased selection:bg-blue-600 selection:text-white pb-[env(safe-area-inset-bottom)] pt-[env(safe-area-inset-top)] pr-[env(safe-area-inset-right)] pl-[env(safe-area-inset-left)]">
+    <!-- Initial Loading Screen for App-Like Feel -->
+    <div id="initial-pwa-loader">
+      <div class="loader-logo-container">
+        <!-- Modern minimalist rocket SVG icon matching PWA branding -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="96" height="96">
+          <circle cx="256" cy="256" r="210" fill="none" stroke="#3B82F6" stroke-width="6" opacity="0.8" />
+          <path d="M 120 340 A 150 150 0 0 1 120 172" fill="none" stroke="#FF671F" stroke-width="12" stroke-linecap="round" opacity="0.9" />
+          <path d="M 392 172 A 150 150 0 0 1 392 340" fill="none" stroke="#046A38" stroke-width="12" stroke-linecap="round" opacity="0.9" />
+          <path d="M 236 340 Q 256 420 276 340 Z" fill="#F97316" />
+          <path d="M 256 120 C 276 190 290 260 290 320 L 222 320 C 222 260 236 190 256 120 Z" fill="#F8FAFC" />
+          <path d="M 222 280 L 176 320 L 222 320 Z" fill="#1D4ED8" />
+          <path d="M 290 280 L 336 320 L 290 320 Z" fill="#1D4ED8" />
+          <path d="M 256 120 C 263 145 268 170 270 190 L 242 190 C 244 170 249 145 256 120 Z" fill="#EF4444" />
+          <circle cx="256" cy="230" r="20" fill="#0EA5E9" stroke="#CBD5E1" stroke-width="4" />
+        </svg>
+      </div>
+      <div class="loader-text">India Startup Guide</div>
+      <div class="loader-subtext">ATSFY Technologies</div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offline — India Startup Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background-color: #0F172A; /* Slate 900 */
+        color: #F8FAFC; /* Slate 50 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 24px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      .card {
+        background-color: #1E293B; /* Slate 800 */
+        border: 1px solid #334155; /* Slate 700 */
+        border-radius: 24px;
+        padding: 48px 32px;
+        max-width: 480px;
+        width: 100%;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+      }
+      .icon-container {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        background-color: rgba(59, 130, 246, 0.1); /* Blue 500 10% */
+        border-radius: 50%;
+        margin-bottom: 24px;
+        color: #3B82F6; /* Blue 500 */
+      }
+      .logo {
+        width: 48px;
+        height: 48px;
+      }
+      h1 {
+        font-size: 24px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+        margin-top: 0;
+        margin-bottom: 12px;
+        color: #FFFFFF;
+      }
+      p {
+        color: #94A3B8; /* Slate 400 */
+        font-size: 14px;
+        line-height: 1.6;
+        margin-top: 0;
+        margin-bottom: 32px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #3B82F6; /* Blue 500 */
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 14px 28px;
+        border-radius: 12px;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.2);
+      }
+      .btn:hover {
+        background-color: #2563EB; /* Blue 600 */
+        transform: translateY(-1px);
+        box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
+      }
+      .btn:active {
+        transform: translateY(0);
+      }
+      .badge {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 10px;
+        font-weight: 600;
+        background-color: rgba(239, 68, 68, 0.1); /* Red 500 10% */
+        color: #EF4444; /* Red 500 */
+        border: 1px solid rgba(239, 68, 68, 0.2);
+        padding: 4px 10px;
+        border-radius: 9999px;
+        display: inline-block;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card" id="offline-fallback-card">
+      <div class="icon-container" id="offline-icon-container">
+        <!-- SVG Wi-Fi Off / Globe Off representation -->
+        <svg class="logo" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-3.536 4.978 4.978 0 011.414-3.536M3 3l18 18M9.172 9.172L6.343 6.343M12 12h.01"></path>
+        </svg>
+      </div>
+      <br>
+      <div class="badge" id="offline-badge">Offline Mode</div>
+      <h1 id="offline-title">India Startup Guide</h1>
+      <p id="offline-desc">You are currently offline. The application will continue working with cached data, but some interactive elements might require an active internet connection to update.</p>
+      <button class="btn" onclick="window.location.reload()" id="offline-retry-btn">Retry Connection</button>
+    </div>
+  </body>
+</html>
