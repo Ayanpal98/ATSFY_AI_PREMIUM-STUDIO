@@ -1,6 +1,8 @@
 {
-  "name": "India Startup Guide",
-  "description": "India Startup Guide by ATSFY Technologies",
+  "name": "ATSFY AI",
+  "description": "AI Product Development Studio helping startups and enterprises design, build, and scale intelligent AI products.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

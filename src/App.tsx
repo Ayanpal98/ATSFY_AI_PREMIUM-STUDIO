@@ -869,8 +869,8 @@ export default function App() {
               <span className="text-sm font-extrabold rotate-12 group-hover:rotate-0 transition-transform">AT</span>
             </div>
             <div>
-              <span className="text-xl font-extrabold tracking-tighter text-slate-950">ATSFY</span>
-              <span className="text-xs block font-bold text-blue-600 tracking-widest uppercase">Technologies</span>
+              <span className="text-xl font-extrabold tracking-tighter text-slate-950">ATSFY AI</span>
+              <span className="text-xs block font-bold text-blue-600 tracking-widest uppercase">Product Studio</span>
             </div>
           </div>
 
@@ -961,13 +961,13 @@ export default function App() {
                     <div className="w-6 h-6 bg-slate-950 text-white rounded-md flex items-center justify-center font-bold text-[10px]">
                       <span>AT</span>
                     </div>
-                    <span className="text-base font-extrabold tracking-tight text-slate-950">ATSFY</span>
+                    <span className="text-base font-extrabold tracking-tight text-slate-950">ATSFY AI</span>
                   </div>
                   <p className="text-[9px] font-bold text-blue-600 uppercase tracking-widest font-mono">
-                    AI Product Development Studio
+                    AI Product Studio
                   </p>
                   <p className="text-xs text-slate-500 leading-relaxed font-normal">
-                    Designing intelligent AI products for startups & enterprises.
+                    Designing and developing AI products, AI agents, SaaS platforms, and intelligent automation for startups and enterprises.
                   </p>
                 </div>
 
@@ -1076,13 +1076,13 @@ export default function App() {
 
                   {/* Headline */}
                   <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-extrabold tracking-tighter text-slate-950 leading-[1.1]" id="hero-headline">
-                    Build Intelligent AI Products That <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Drive Real Business Growth.</span>
+                    Build AI Products That <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Drive Real Business Growth.</span>
                   </h1>
 
                   {/* Supporting paragraph */}
                   <div className="text-slate-600 text-sm md:text-base leading-relaxed">
                     <p>
-                      From idea validation to production-ready AI applications, ATSFY partners with startups, enterprises, and innovators to design, build, and scale intelligent products that solve real-world problems. We combine product strategy, AI engineering, and responsible development to help you launch with confidence.
+                      From idea validation to production-ready AI applications, ATSFY AI partners with startups, enterprises, and innovators to design, build, and scale intelligent products that solve real-world problems. We combine product strategy, AI engineering, and responsible development to help you launch with confidence.
                     </p>
                   </div>
 
@@ -4007,12 +4007,12 @@ export default function App() {
                   <span>AT</span>
                 </div>
                 <div>
-                  <span className="text-xl font-extrabold tracking-tighter text-white">ATSFY Technologies</span>
-                  <span className="text-xs block font-bold text-blue-400 tracking-widest uppercase">AI Product Development Studio</span>
+                  <span className="text-xl font-extrabold tracking-tighter text-white">ATSFY AI</span>
+                  <span className="text-xs block font-bold text-blue-400 tracking-widest uppercase">AI Product Studio</span>
                 </div>
               </div>
               <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
-                Building AI Products That Create Real Business Value. We design and deliver production-ready, VC-grade intelligent solutions with zero compromises.
+                Build AI Products That Drive Real Business Growth. We design and deliver production-ready, VC-grade intelligent solutions with zero compromises.
               </p>
               <div className="pt-2">
                 <span className="inline-flex items-center gap-1.5 text-[10px] bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2.5 py-1 rounded font-mono font-bold uppercase">
@@ -4087,7 +4087,7 @@ export default function App() {
           {/* Legal Bar */}
           <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-[10px] text-slate-400 font-medium">
             <p>
-              © 2026 ATSFY Technologies. Building AI Products That Create Real Business Value.
+              © 2026 ATSFY AI. Build AI Products That Drive Real Business Growth.
             </p>
             <div className="flex gap-4">
               <span className="hover:text-white cursor-pointer">PRIVACY POLICY</span>
