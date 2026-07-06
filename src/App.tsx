@@ -310,13 +310,7 @@ export default function App() {
     }
   };
 
-  // Stats / Trust section metrics
-  const stats = [
-    { value: "$45M+", label: "Capital Raised", desc: "Seed & Series-A capital secured by ATSFY client startups." },
-    { value: "4-8 Weeks", label: "Average Delivery", desc: "Rapid concept scoping to production deployment window." },
-    { value: "100%", label: "IP Ownership", desc: "Absolute code and intellectual property transfer upon delivery." },
-    { value: "SOC 2", label: "Enterprise Ready", desc: "Designed with state-of-the-art compliance and security guardrails." }
-  ];
+
 
   // Industry sectors for Portfolio filter
   const categories: string[] = ['All', 'Education', 'Healthcare', 'Hiring', 'Finance', 'Startup Intelligence', 'Sustainability'];
@@ -1432,23 +1426,69 @@ export default function App() {
               </div>
             </section>
 
-            {/* TRUST STATISTICS SECTION */}
-            <section className="bg-slate-900 text-white py-16" id="stats-section">
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="mb-12 text-center max-w-2xl mx-auto space-y-3">
-                  <span className="text-xs font-bold text-blue-400 uppercase tracking-widest">ATSFY edge</span>
-                  <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">The Benchmarks of Professional Delivery</h2>
-                  <p className="text-slate-400 text-sm">We provide enterprise execution standard for both stealth startups and scaled organizations.</p>
-                </div>
+            {/* BUILT FOR AMBITIOUS IDEAS SECTION */}
+            <section className="bg-slate-900 text-white py-20 relative overflow-hidden" id="stats-section">
+              {/* Background Glow effects */}
+              <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+              <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+              
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                  
+                  {/* Left Column: Heading and Description */}
+                  <div className="lg:col-span-6 space-y-6">
+                    <span className="text-xs font-bold text-blue-400 uppercase tracking-widest bg-blue-500/10 px-3 py-1.5 rounded-full border border-blue-500/20">
+                      ATSFY Philosophy
+                    </span>
+                    <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight" id="built-ambitious-title">
+                      Built for <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">Ambitious Ideas</span>
+                    </h2>
+                    <p className="text-slate-300 text-base md:text-lg leading-relaxed font-normal">
+                      From early-stage startups to enterprise teams, we turn complex AI ideas into production-ready products with strategy, design, and engineering under one roof.
+                    </p>
+                  </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                  {stats.map((stat, i) => (
-                    <div key={i} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors duration-300">
-                      <p className="text-4xl font-extrabold text-blue-400 mb-1">{stat.value}</p>
-                      <p className="text-sm font-bold text-white mb-2">{stat.label}</p>
-                      <p className="text-xs text-slate-300 leading-relaxed">{stat.desc}</p>
-                    </div>
-                  ))}
+                  {/* Right Column: Grid of High-Impact Value Pillars */}
+                  <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6" id="ambitious-pillars">
+                    {[
+                      {
+                        title: "AI Product Development",
+                        desc: "Transforming ambitious AI concepts into robust, validated, production-ready systems.",
+                        iconBg: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+                      },
+                      {
+                        title: "Intelligent Automation",
+                        desc: "Streamlining operations and workflows with advanced agentic LLM integrations.",
+                        iconBg: "bg-indigo-500/10 text-indigo-400 border-indigo-500/20",
+                      },
+                      {
+                        title: "Custom Software",
+                        desc: "Crafting highly performant, custom-tailored full-stack platforms from the ground up.",
+                        iconBg: "bg-purple-500/10 text-purple-400 border-purple-500/20",
+                      },
+                      {
+                        title: "Long-Term Partnership",
+                        desc: "Supporting your growth scale-by-scale, ensuring seamless system evolution.",
+                        iconBg: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+                      }
+                    ].map((pillar, idx) => (
+                      <div 
+                        key={idx} 
+                        className="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:bg-slate-800/75 hover:border-slate-700/80 transition-all duration-300 group shadow-lg"
+                      >
+                        <div className={`w-10 h-10 rounded-xl flex items-center justify-center font-bold text-lg mb-4 border ${pillar.iconBg} group-hover:scale-110 transition-transform duration-300`}>
+                          ✓
+                        </div>
+                        <h4 className="text-base font-bold text-white mb-2 tracking-tight group-hover:text-blue-300 transition-colors">
+                          {pillar.title}
+                        </h4>
+                        <p className="text-xs text-slate-400 leading-relaxed">
+                          {pillar.desc}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+
                 </div>
               </div>
             </section>
