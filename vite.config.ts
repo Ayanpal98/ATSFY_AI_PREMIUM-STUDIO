@@ -14,9 +14,9 @@ export default defineConfig(() => {
         injectRegister: 'auto',
         includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'pwa-icon.svg', 'pwa-maskable-icon.svg', 'offline.html'],
         manifest: {
-          name: 'India Startup Guide',
-          short_name: 'Startup Guide',
-          description: 'India Startup Guide by ATSFY Technologies',
+          name: 'ATSFY AI | AI Product Studio',
+          short_name: 'ATSFY AI',
+          description: 'ATSFY AI designs and develops AI products, AI agents, SaaS platforms, and intelligent automation for startups and enterprises.',
           theme_color: '#0F172A',
           background_color: '#FFFFFF',
           display: 'standalone',

@@ -41,7 +41,7 @@ export default function InstallApp() {
       // Clear the deferredPrompt so it can be garbage collected
       setDeferredPrompt(null);
       setIsVisible(false);
-      console.log('PWA: India Startup Guide app was successfully installed!');
+      console.log('PWA: ATSFY AI app was successfully installed!');
     };
 
     window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
@@ -86,13 +86,13 @@ export default function InstallApp() {
         </div>
         <div>
           <div className="flex items-center gap-1.5">
-            <h4 className="text-sm font-bold text-slate-900">Install Startup Guide</h4>
+            <h4 className="text-sm font-bold text-slate-900">Install ATSFY AI</h4>
             <span className="flex items-center gap-0.5 bg-indigo-100/60 text-indigo-700 text-[9px] font-extrabold px-1.5 py-0.5 rounded-md uppercase tracking-wider">
               <Sparkles className="w-2.5 h-2.5 text-indigo-600" /> offline ready
             </span>
           </div>
           <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-            Get instant access, offline support, cost calculators, and business comparison tools directly from your home screen.
+            Get instant access, offline support, and our real-time AI product strategy planner directly from your home screen.
           </p>
         </div>
       </div>

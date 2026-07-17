@@ -1096,7 +1096,7 @@ export default function App() {
                       className="px-6 py-4 bg-blue-600 text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-md hover:shadow-lg hover:-translate-y-0.5 hover:bg-blue-700 transition-all duration-300 flex items-center gap-2 group cursor-pointer"
                       id="hero-primary-cta"
                     >
-                      <span>🚀 Start Your Company Registration</span>
+                      <span>🚀 Launch AI Strategy Planner</span>
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </button>
                     <button 
